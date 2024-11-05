@@ -13,15 +13,28 @@
     <section class="weather-menu">
         <div class="container">
             <span>Широта</span>
-            <input type="number" class="latitude">
+            <input type="text" id="latitude">
         </div>
         <div class="container">
             <span>Долгота</span>
-            <input type="number" class="longitude">
+            <input type="text" id="longitude">
         </div>
-        <button>Показать погоду</button>
-        <p class="temperature">28°</p>
+        <form>
+            <button>Показать погоду</button>
+        </form>
+        <div class="weather">
+            <!--<div class="left">
+                <span class="city"><b>Екатеринбург</b></span>
+                <span>Влажность: <span class="humidity">90%</span></span>
+                <span>Скорость ветра: <span class="wind">1 м/с</span></span>
+            </div>
+            <div class="right">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png">
+                <span class="temperature">10°C</span>
+            </div>-->
+        </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
