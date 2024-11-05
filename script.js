@@ -29,6 +29,6 @@ function createWeather(data){
             </div>
             <div class="right">
                 <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png">
-                <span class="temperature">${Math.round(data.main.temp - 273)}°C</span>
+                <span class="temperature"><b>${Math.round(data.main.temp - 273)}°C</b></span>
             </div>`;
 }
