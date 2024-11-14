@@ -44,7 +44,7 @@ button:disabled {
     padding: 79px 332px 463px 331px;
 }
 
-.weather{
+.card{
     font-size: 30px;
     display: flex;
     padding: 20px;
@@ -55,6 +55,7 @@ button:disabled {
     box-sizing: border-box;
     width: 617px;
     height: 200px;
+    margin-bottom: 50px;
     .left{
         display: flex;
         flex-direction: column;

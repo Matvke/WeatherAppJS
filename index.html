@@ -5,36 +5,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
     <title>Weather</title>
 </head>
 
 <body>
-    <section class="weather-menu">
-        <div class="container">
-            <span>Широта</span>
-            <input type="text" id="latitude">
-        </div>
-        <div class="container">
-            <span>Долгота</span>
-            <input type="text" id="longitude">
-        </div>
-        <form>
+    <div class="weather-menu">
+        <form id="weather-form">
+            <div class="container">
+                <span>Широта</span>
+                <input type="text" id="latitude">
+            </div>
+            <div class="container">
+                <span>Долгота</span>
+                <input type="text" id="longitude">
+            </div>
             <button>Показать погоду</button>
         </form>
-        <div class="weather">
-            <!--<div class="left">
-                <span class="city"><b>Екатеринбург</b></span>
-                <span>Влажность: <span class="humidity">90%</span></span>
-                <span>Скорость ветра: <span class="wind">1 м/с</span></span>
-            </div>
-            <div class="right">
-                <img src="https://openweathermap.org/img/wn/10d@2x.png">
-                <span class="temperature">10°C</span>
-            </div>-->
-        </div>
-    </section>
-    <script src="script.js"></script>
-</body>
+        <!--ВИДЖЕТЫ-->
+        <div id="widget-container" class="widget"></div>
+        <div id="widget-container1" class="widget"></div>
 
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
 </html>
