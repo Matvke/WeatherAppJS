@@ -8,18 +8,19 @@ document.getElementById('weather-form').addEventListener('submit', e => {
     if (isNaN(latitude) || isNaN(longitude)) {
         alert('Введите корректные значения широты и долготы');
     } else {
+        const widgetContainer = document.createElement('div');
+        const uniqueId = `widget-container-${Date.now()}`;
+        widgetContainer.id = uniqueId;
+        document.getElementById('widgets').appendChild(widgetContainer);
+
+        const weatherWidget = new Application(widgetContainer);
         weatherWidget.run(latitude, longitude);
-        weatherWidget1.run(latitude, longitude);        
     }
 });
-
-// виджеты
-const weatherWidget = new Application('widget-container');
-const weatherWidget1 = new Application('widget-container1');
 
 window.removeWidget = function(containerId) {
     const container = document.getElementById(containerId);
     if (container) {
-        container.innerHTML = '';
+        container.remove();
     }
 }
